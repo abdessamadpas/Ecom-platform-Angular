@@ -7,9 +7,11 @@ import { MainCarouselComponent } from './home/main-carousel/main-carousel.compon
 import { HomeProductCardComponent } from './home/home-product-card/home-product-card.component';
 import { ProductSliderComponent } from './home/product-slider/product-slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavContentComponent } from './nav-content/nav-content.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NavContentComponent } from './navbar/nav-content/nav-content.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
     MainCarouselComponent,
     HomeProductCardComponent,
     ProductSliderComponent,
+    NavbarComponent,
     NavContentComponent,
   ],
   imports: [
@@ -25,7 +28,8 @@ import {MatButtonModule} from '@angular/material/button';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent],
