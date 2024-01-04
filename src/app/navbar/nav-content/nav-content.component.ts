@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-nav-content',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-content.component.scss']
 })
 export class NavContentComponent {
- 
+  @Input() selectedSetion : any
+  categroy : any;
+  selectedSection : any;
+
 }

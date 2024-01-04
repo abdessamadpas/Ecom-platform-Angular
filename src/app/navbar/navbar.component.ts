@@ -6,8 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  openNavbarContent(menu:any){
-    
+  currentSetion : any;
+  isNavbarContentOpen : any;
+  openNavbarContent(section:any){
+    this.isNavbarContentOpen = true;
+    this.currentSetion = section;
   }
+  closeNavbarContent(){
+    this.isNavbarContentOpen = false;
+  }
+  
+
   navigateTo(path:any){}
 }

@@ -3,11 +3,11 @@
 >
   <div class="h-16 w-full flex items-center justify-between">
     <div class="flex items-center gap-2">
-        <img
-          src="https://images.unsplash.com/photo-1629806591623-dc5b6102dfc7?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "
-          alt=""
-          class="w-8"
-        />
+      <img
+        src="https://images.unsplash.com/photo-1629806591623-dc5b6102dfc7?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "
+        alt=""
+        class="w-8"
+      />
       <div class="">
         <div class="flex space-x-4 items-center">
           <a routerLink="/" class=""> shop with Us</a>
@@ -26,7 +26,9 @@
       <button (click)="navigateTo('cart')" mat-icon-button>
         <mat-icon>shopping_cart</mat-icon>
       </button>
-      <button *ngIf="false" mat-raised-button type="" color="accent">LOGIN</button>
+      <button *ngIf="false" mat-raised-button type="" color="accent">
+        LOGIN
+      </button>
       <div *ngIf="true" class="ml-3 flex items-center">
         <div class="flex items-center space-x-5">
           <span class="font-bold text-lg">AbdessamadPas</span>
@@ -46,4 +48,7 @@
       </div>
     </div>
   </div>
+</div>
+<div *ngIf="isNavbarContentOpen" class="modal-container">
+  <app-nav-content [selectedSetion]="currentSetion" />
 </div>
